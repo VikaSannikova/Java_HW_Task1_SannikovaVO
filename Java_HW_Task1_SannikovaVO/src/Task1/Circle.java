@@ -40,7 +40,7 @@ public class Circle {
                 '}';
     }
 
-    public double GetArea(){
+    public double getArea(){
         return Math.PI*Math.pow(radius,2);
     }
 }

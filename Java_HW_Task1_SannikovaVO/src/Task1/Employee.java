@@ -31,11 +31,17 @@ public class Employee {
     public int getSalary() {
         return salary;
     }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
     public int getAnnualSalary(){
         return salary*12;
     }
-    public double raiseSalary(int percent){ //почему в задании стоит int
-        return salary*percent/100;          //правильное ли деление
+
+    public double raiseSalary(int percent){
+        salary =(int)(salary * (1.0f + (float)percent / 100.0f));
+        return salary;
     }
 
     @Override

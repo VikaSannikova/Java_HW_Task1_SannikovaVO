@@ -62,14 +62,9 @@ public class Book {
 
     public String getAuthorsNames(){
         ArrayList<String> names =  new ArrayList<String>();
-        for(Author author:authors)
-        {
+        for(Author author:authors) {
             names.add(author.getName());
         }
-        /*for(int i=0;i<authors.length;i++)
-        {
-            names[i]=authors[i].getName();
-        }*/
         return StringUtils.join(names,","); //wtf
     }
 }
